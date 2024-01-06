@@ -12,7 +12,7 @@ DB_HOST = "tiny.db.elephantsql.com"
 DB_PORT = 5432
 DB_NAME = "weczkopy"
 DB_USER = "weczkopy"
-DB_PASSWORD = "O4UkZD_FEdzvpbP1nzKzndX7iqMtIrG0"
+DB_PASSWORD = ""
 
 conn = psycopg2.connect(
     host=DB_HOST,
@@ -24,7 +24,7 @@ conn = psycopg2.connect(
 
 app = Flask(__name__, template_folder='templates')
 
-GOOGLE_API_KEY = 'AIzaSyDMy65psW7MPp7KF3Z_EQW3yZqKMVA2a8Q'
+GOOGLE_API_KEY = ''
 genai.configure(api_key=GOOGLE_API_KEY)
 
 responses = []
